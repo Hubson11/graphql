@@ -1,6 +1,6 @@
 const { ApolloServer, gql } = require("apollo-server");
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4000;
 
 const typeDefs = gql`
   type Query {
@@ -20,7 +20,12 @@ const data = {
   pets: ["Mittens", "Doggo", "Birb"],
 };
 
-const server = new ApolloServer({ typeDefs, rootValue: data });
+const server = new ApolloServer({
+  typeDefs,
+  rootValue: data,
+  playground: true,
+  introspection: true,
+});
 
 server
   .listen({ port: PORT })
