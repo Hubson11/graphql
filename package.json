@@ -1,20 +1,19 @@
 {
-  "name": "graphql",
-  "version": "1.0.0",
-  "description": "Graphql test project",
+  "name": "random-stuff-refactoring-start",
+  "description": "",
+  "dependencies": {
+    "apollo-server": "2.11.0",
+    "graphql": "14.6.0",
+    "inspirational-quotes": "1.0.8"
+  },
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js localhost 4000"
   },
-  "author": "Hubert Worwa <hubert@learningspace.eu>",
-  "license": "ISC",
+  "keywords": [],
   "devDependencies": {
-    "nodemon": "^2.0.7"
-  },
-  "dependencies": {
-    "apollo-server": "^2.19.2",
-    "graphql": "^15.5.0"
+    "@types/graphql": "14.0.1",
+    "nodemon": "1.18.4"
   }
 }
