@@ -65,9 +65,15 @@ const typeDefs = gql`
     date: Date!
     person: Person!
   }
+  """
+  Type defines Day of meeting
+  """
   type Date {
     day: DayOfWeek!
   }
+  """
+  Type defines Person details which one got a meeting
+  """
   type Person {
     name: String!
     surname: String!
