@@ -4,17 +4,18 @@
   "dependencies": {
     "apollo-server": "2.11.0",
     "graphql": "14.6.0",
-    "inspirational-quotes": "1.0.8"
+    "inspirational-quotes": "1.0.8",
+    "node": "^15.8.0"
   },
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "node fileName.js",
-    "start:dev": "nodemon fileName.js"
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
   },
   "keywords": [],
   "devDependencies": {
     "@types/graphql": "14.0.1",
-    "nodemon": "1.18.4"
+    "nodemon": "^2.0.7"
   }
 }
